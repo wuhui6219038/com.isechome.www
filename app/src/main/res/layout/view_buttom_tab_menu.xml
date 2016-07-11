@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:id="@+id/buttom_menu_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/main_menu"
+        app:layout_constraintLeft_toLeftOf="@+id/main_menu"
+        app:layout_constraintRight_toRightOf="@+id/main_menu"
+        app:layout_constraintTop_toBottomOf="@+id/main_content"
+       >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine" />
+
+        <RadioGroup
+            android:id="@+id/buttom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/tab_buttom_menu_height"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_selector_check_home"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/home"
+                android:textColor="@color/tab_selector_tv_color"
+                android:textSize="@dimen/menu_font"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <RadioButton
+                android:id="@+id/sale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_selector_check_sale"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/sale"
+                android:textColor="@color/tab_selector_tv_color"
+                android:textSize="@dimen/menu_font"
+                tools:layout_editor_absoluteX="82dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <RadioButton
+                android:id="@+id/trading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_selector_check_trading"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/trading"
+                android:textColor="@color/tab_selector_tv_color"
+                android:textSize="@dimen/menu_font"
+                tools:layout_editor_absoluteX="164dp"
+                tools:layout_editor_absoluteY="0dp"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/custom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_selector_check_custom"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/custom"
+                android:textColor="@color/tab_selector_tv_color"
+                android:textSize="@dimen/menu_font"
+                tools:layout_editor_absoluteX="246dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <RadioButton
+                android:id="@+id/more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/tab_selector_check_more"
+                android:gravity="center_horizontal|bottom"
+                android:text="@string/more"
+                android:textColor="@color/tab_selector_tv_color"
+                android:textSize="@dimen/menu_font"
+                tools:layout_editor_absoluteX="329dp"
+                tools:layout_editor_absoluteY="0dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttom_menu_view"
+        app:layout_constraintLeft_toLeftOf="@+id/main_menu"
+        app:layout_constraintRight_toRightOf="@+id/main_menu"
+        app:layout_constraintTop_toTopOf="@+id/main_menu">
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

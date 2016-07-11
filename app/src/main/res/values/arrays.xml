@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_tab">
+        <item>现货销售</item>
+        <item>现货采购</item>
+        <item>最新公告</item>
+        <item>现货报价</item>
+    </string-array>
+    <string-array name="salse_tab">
+        <item>现</item>
+        <item>现货采购</item>
+        <item>最新公告</item>
+
+    </string-array>
+</resources>

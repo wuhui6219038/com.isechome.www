@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">易纲云商</string>
+    <string name="action_search">搜索</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="home">首页</string>
+    <string name="sale">销售采购</string>
+    <string name="trading">交易</string>
+    <string name="custom">定制资源</string>
+    <string name="more">更多</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_user">账号</string>
+    <string name="prompt_user_tips">用户名/邮箱</string>
+    <string name="prompt_password">密码</string>
+    <string name="prompt_password_tips">请输入密码</string>
+    <string name="action_sign_in">登陆</string>
+    <string name="action_regist">快速注册</string>
+    <string name="action_re_password">找回密码</string>
+    <string name="action_next">下一步</string>
+    <string name="action_finish">完成</string>
+    <string name="action_hotline">遇到麻烦了?请联系客服</string>
+    <string name="info_userphone">验证码已发送到％s手机上</string>
+    <string name="info_yanzhengma">重新发送(%ss)</string>
+</resources>

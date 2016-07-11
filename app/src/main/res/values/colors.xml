@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorMenuFont">#BDBDBD</color>
+    <color name="colorMainFont">#BDBDBD</color>
+    <color name="colorLine">#E0E0E0</color>
+    <color name="colorRegistBackgroud">#E0E0E0</color>
+</resources>

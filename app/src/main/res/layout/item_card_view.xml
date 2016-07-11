@@ -1,0 +1,80 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_gravity="center"
+    card:cardBackgroundColor="@android:color/white"
+    card:cardCornerRadius="0dp"
+    card:cardElevation="2dp"
+    card:cardMaxElevation="@dimen/cardview_default_elevation"
+    card:cardPreventCornerOverlap="true"
+
+    card:cardUseCompatPadding="true">
+    <!--cardMaxElevation：最大卡片阴影的宽度-->
+    <!--cardElevation:卡片阴影的宽度-->
+    <!--cardBackgroundColor:卡片的背景颜色-->
+    <!--cardCornerRadius ：卡片的圆角半径-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/main_padding">
+
+        <TextView
+            android:id="@+id/companyInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="这里显示公司名称" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="螺纹钢  HRB400E 产地"
+                android:textSize="@dimen/main_font"
+
+                />
+
+            <TextView
+                android:id="@+id/productInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="产品信息:材质|规格"
+                android:textSize="@dimen/main_font"
+
+                />
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="产品价格(元/吨):2321"
+                android:textSize="@dimen/main_font" />
+
+            <TextView
+                android:id="@+id/productNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="产品数量(吨):2321"
+                android:textSize="@dimen/main_font" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
