@@ -1,4 +1,4 @@
-package isechome.comisechomewww;
+package isechome.comisechomewww.activity;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -34,6 +34,8 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import isechome.comisechomewww.R;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
