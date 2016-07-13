@@ -17,4 +17,6 @@ public interface IBaseView {
      */
 //    public void setViewDefalutValue();
 
+
+    public  void setTitle(String title);
 }

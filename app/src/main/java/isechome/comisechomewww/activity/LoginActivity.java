@@ -50,19 +50,22 @@ public class LoginActivity extends BaseActivity implements ILoginView {
     TextView aboutsoftTextview;
     @BindView(R.id.loginview)
     LinearLayout loginview;
-
+    @BindView(R.id.title_textview)
+    TextView title;
     private LoginPresenter persenter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        super.onCreate(savedInstanceState);
         persenter = new LoginPresenter(this);
         initView();
     }
 
     @Override
     public void initView() {
+
+
         username.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -116,5 +119,10 @@ public class LoginActivity extends BaseActivity implements ILoginView {
             case R.id.aboutsoft_textview:
                 break;
         }
+    }
+
+    @Override
+    public void setTitle(String title) {
+        this.title.setText(title);
     }
 }

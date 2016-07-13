@@ -21,6 +21,5 @@ public interface ILoginView extends IBaseView {
      * 清空用户名
      */
     void clearUserName();
-
 }
 
