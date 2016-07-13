@@ -10,11 +10,11 @@ public interface IBaseView {
     /**
      * 初始化页面控件
      */
-    public void initActivityView();
+    //  public void initActivityView();
 
     /**
      * 给初始控件赋值
      */
-    public void setViewDefalutValue();
+//    public void setViewDefalutValue();
 
 }

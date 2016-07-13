@@ -24,7 +24,9 @@
     <string name="info_userinfo">用户名:%s</string>
     <string name="info_yanzhengma">重新发送(%ss)</string>
     <string name="info_reset_password">请设置新的登录密码</string>
+    <string name="info_hint_yanzhengma">请输入验证码</string>
     <string name="info_hint_password">大于6位，不能和旧密码相同</string>
+    <string name="info_tips_xieyi">同意附加条款</string>
     <string name="info_tips_password">备注:密码设置为大于6位,并且由字母,数字,符号两种以上组合,不能和旧密码相同</string>
 
 

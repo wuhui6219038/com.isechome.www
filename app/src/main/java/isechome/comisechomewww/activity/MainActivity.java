@@ -24,7 +24,7 @@ import isechome.comisechomewww.fragment.MoreFragment;
 import isechome.comisechomewww.fragment.SaleFragment;
 import isechome.comisechomewww.fragment.TradeFragment;
 
-public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
+public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     private Toolbar mToolbar;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
