@@ -14,12 +14,15 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import isechome.comisechomewww.R;
+import isechome.comisechomewww.presenter.IPresenter;
 import isechome.comisechomewww.presenter.LoginPresenter;
+import isechome.comisechomewww.tools.ToastUtil;
 import isechome.comisechomewww.view.ILoginView;
 
 /**
@@ -50,8 +53,7 @@ public class LoginActivity extends BaseActivity implements ILoginView {
     TextView aboutsoftTextview;
     @BindView(R.id.loginview)
     LinearLayout loginview;
-    @BindView(R.id.title_textview)
-    TextView title;
+
     private LoginPresenter persenter;
 
     @Override
@@ -60,12 +62,11 @@ public class LoginActivity extends BaseActivity implements ILoginView {
         super.onCreate(savedInstanceState);
         persenter = new LoginPresenter(this);
         initView();
+        setViewDefalutValue();
     }
 
     @Override
     public void initView() {
-
-
         username.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -88,16 +89,6 @@ public class LoginActivity extends BaseActivity implements ILoginView {
         });
     }
 
-    @Override
-    public void showPassWord(boolean show) {
-
-    }
-
-    @Override
-    public void clearUserName() {
-
-    }
-
 
     @OnClick({R.id.clear_iv, R.id.show_full, R.id.sign_in_button, R.id.regist_textview, R.id.re_password_textview, R.id.aboutsoft_textview})
     public void onClick(View view) {
@@ -115,14 +106,21 @@ public class LoginActivity extends BaseActivity implements ILoginView {
                 persenter.jump2Where(FastRegisterActivity.class, null);
                 break;
             case R.id.re_password_textview:
+                persenter.jump2Where(ReSetPassWordActivity.class, null);
                 break;
             case R.id.aboutsoft_textview:
+                ToastUtil.showMsg_By_String(this, "跳转单html页面", Toast.LENGTH_SHORT);
                 break;
         }
     }
 
     @Override
+    public void setViewDefalutValue() {
+        persenter.getTitle(IPresenter.TITLE_TYPE_LOGIN);
+    }
+
+    @Override
     public void setTitle(String title) {
-        this.title.setText(title);
+        this.titleTextview.setText(title);
     }
 }

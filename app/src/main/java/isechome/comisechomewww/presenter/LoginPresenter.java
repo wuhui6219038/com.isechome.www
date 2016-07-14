@@ -55,6 +55,11 @@ public class LoginPresenter implements IPresenter {
     @Override
     public void getTitle(int type) {
         if (type == TITLE_TYPE_REGISTER)
-            mLoginView.setTitle(mContext.getResources().getString(R.string.title_register));
+            mLoginView.setTitle(mContext.getResources().getString(R.string.title_login));
+    }
+
+    @Override
+    public void setYanZhengMaInfo(View view, int count, boolean isFinish) {
+
     }
 }

@@ -10,16 +10,6 @@ public interface ILoginView extends IBaseView {
      */
     void initView();
 
-    /**
-     * 显示密码
-     *
-     * @param show
-     */
-    void showPassWord(boolean show);
 
-    /**
-     * 清空用户名
-     */
-    void clearUserName();
 }
 

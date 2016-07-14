@@ -4,34 +4,29 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.text.InputType;
-import android.widget.CheckBox;
-import android.widget.EditText;
+import android.view.View;
+import android.widget.Button;
 
 import isechome.comisechomewww.R;
-import isechome.comisechomewww.model.ILoginModel;
+import isechome.comisechomewww.model.IRegisterModel;
 import isechome.comisechomewww.view.ILoginView;
+import isechome.comisechomewww.view.IRegisterView;
 
 /**
  * Created by Administrator on 2016/7/13.
  */
 
 public class RegistPresenter implements IPresenter {
-    private ILoginView mLoginView;
-    private ILoginModel mLoginModel;
+    private IRegisterView mResgisetView;
+    private IRegisterModel mResgisetModel;
     private Context mContext;
     private Intent intent;
 
-    public RegistPresenter(ILoginView view) {
-        mLoginView = view;
-
+    public RegistPresenter(IRegisterView view) {
+        mResgisetView = view;
         mContext = (Context) view;
     }
 
-    public Drawable getCode() {
-        Drawable drawable = null;
-        return drawable;
-    }
 
     public void jump2Where(Class ac, Bundle data) {
         if (intent == null) {
@@ -47,6 +42,15 @@ public class RegistPresenter implements IPresenter {
     @Override
     public void getTitle(int type) {
         if (type == TITLE_TYPE_REGISTER)
-            mLoginView.setTitle(mContext.getResources().getString(R.string.title_register));
+            mResgisetView.setTitle(mContext.getResources().getString(R.string.title_register));
+    }
+
+    public void setYanZhengMaInfo(View view, int count, boolean isFinish) {
+        if (isFinish) {
+            ((Button) view).setText(mContext.getResources().getString(R.string.action_getcode));
+            view.setEnabled(true);
+        } else {
+            ((Button) view).setText(mContext.getResources().getString(R.string.info_yanzhengma, count + ""));
+        }
     }
 }

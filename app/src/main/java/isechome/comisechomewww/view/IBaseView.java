@@ -15,8 +15,7 @@ public interface IBaseView {
     /**
      * 给初始控件赋值
      */
-//    public void setViewDefalutValue();
+    void setViewDefalutValue();
 
-
-    public  void setTitle(String title);
+    void setTitle(String title);
 }

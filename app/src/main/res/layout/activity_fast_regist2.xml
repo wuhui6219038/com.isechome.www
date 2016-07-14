@@ -68,6 +68,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/regist_finish_btn"
             android:layout_width="match_parent"
             android:layout_height="@dimen/regist_button_height"
             android:layout_marginTop="40dp"
@@ -79,7 +80,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="2dp"
-            android:text="遇到问题了?请联系客服"
             android:textSize="@dimen/tips_font" />
     </LinearLayout>
 </LinearLayout>
