@@ -14,9 +14,12 @@ public interface IPresenter {
      * 登录
      */
     static final int TITLE_TYPE_LOGIN = 2;
+    /**
+     * 密码找回
+     */
+    static final int TITLE_TYPE_REGETPASSWORD = 3;
 
     public void getTitle(int type);
 
-    public void setYanZhengMaInfo(View view, int count, boolean isFinish);
 
 }

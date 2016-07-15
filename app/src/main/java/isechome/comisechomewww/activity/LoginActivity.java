@@ -1,7 +1,6 @@
 package isechome.comisechomewww.activity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatAutoCompleteTextView;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
@@ -12,12 +11,10 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 import isechome.comisechomewww.R;
 import isechome.comisechomewww.presenter.IPresenter;
@@ -106,7 +103,7 @@ public class LoginActivity extends BaseActivity implements ILoginView {
                 persenter.jump2Where(FastRegisterActivity.class, null);
                 break;
             case R.id.re_password_textview:
-                persenter.jump2Where(ReSetPassWordActivity.class, null);
+                persenter.jump2Where(ReGetPassWordActivity.class, null);
                 break;
             case R.id.aboutsoft_textview:
                 ToastUtil.showMsg_By_String(this, "跳转单html页面", Toast.LENGTH_SHORT);

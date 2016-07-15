@@ -16,14 +16,15 @@ import isechome.comisechomewww.view.ILoginView;
  * Created by Administrator on 2016/7/13.
  */
 
-public class LoginPresenter implements IPresenter {
+public class LoginPresenter extends BasePresenter {
     private ILoginView mLoginView;
     private ILoginModel mLoginModel;
     private Context mContext;
     private Intent intent;
 
-    public LoginPresenter(ILoginView view) {
-        mLoginView = view;
+    public LoginPresenter(Context view) {
+        super(view);
+        mLoginView = (ILoginView) view;
 
         mContext = (Context) view;
     }
@@ -41,25 +42,5 @@ public class LoginPresenter implements IPresenter {
         }
     }
 
-    public void jump2Where(Class ac, Bundle data) {
-        if (intent == null) {
-            intent = new Intent();
-        }
-        if (data != null) {
-            intent.putExtras(data);
-        }
-        intent.setClass(mContext, ac);
-        mContext.startActivity(intent);
-    }
 
-    @Override
-    public void getTitle(int type) {
-        if (type == TITLE_TYPE_REGISTER)
-            mLoginView.setTitle(mContext.getResources().getString(R.string.title_login));
-    }
-
-    @Override
-    public void setYanZhengMaInfo(View view, int count, boolean isFinish) {
-
-    }
 }

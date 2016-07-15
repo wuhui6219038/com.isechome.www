@@ -57,7 +57,6 @@ public class FastRegisterActivity extends BaseActivity implements IRegisterView 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_fast_regist);
-        ButterKnife.bind(this);
         super.onCreate(savedInstanceState);
         init();
         setViewDefalutValue();
@@ -86,7 +85,7 @@ public class FastRegisterActivity extends BaseActivity implements IRegisterView 
             case R.id.next_btn:
                 Bundle bundle = new Bundle();
                 bundle.putString(REGISTER_PHONE, phoneNumTextview.getText().toString());
-                presenter.jump2Where(FastRegister2Activity.class, bundle);
+                presenter.jump2Where(YanZhengMaCheckActivity.class, bundle);
                 break;
         }
     }

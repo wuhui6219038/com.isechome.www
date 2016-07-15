@@ -8,7 +8,7 @@ import isechome.comisechomewww.R;
  * Created by Administrator on 2016/7/14.
  */
 
-public class ReSetPassWordActivity extends BaseActivity {
+public class SetPassWordActivity extends BaseActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_reset_password);

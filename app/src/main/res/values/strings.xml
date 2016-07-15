@@ -12,6 +12,7 @@
     <!-- Strings related to login -->
     <string name="prompt_user">账号</string>
     <string name="prompt_user_tips">用户名/邮箱</string>
+    <string name="prompt_user_name">用户名</string>
     <string name="prompt_password">密码</string>
     <string name="prompt_password_tips">请输入密码</string>
     <string name="action_sign_in">登陆</string>
@@ -27,6 +28,7 @@
     <string name="info_reset_password">请设置新的登录密码</string>
     <string name="info_hint_yanzhengma">请输入验证码</string>
     <string name="info_hint_password">大于6位，不能和旧密码相同</string>
+    <string name="info_hint_user">用户名/已验证手机</string>
     <string name="info_tips_xieyi">同意附加条款</string>
     <string name="info_tips_password">备注:密码设置为大于6位,并且由字母,数字,符号两种以上组合,不能和旧密码相同</string>
     <string name="title_register">注册</string>
